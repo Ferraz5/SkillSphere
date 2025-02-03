@@ -1,34 +1,34 @@
 # SkillSphere
 
-**SkillSphere** é uma aplicação web interativa para perfis de programadores, onde os recrutadores podem acessar e explorar as habilidades e experiências dos candidatos. O objetivo é fornecer uma plataforma fácil de navegar, com categorias como soft skills, educação, experiências passadas e muito mais, tudo apresentado de forma dinâmica, como uma plataforma de streaming, mas com currículos em vez de filmes.
+**SkillSphere** is an interactive web application for showcasing developer profiles, where recruiters can access and explore candidates' skills and experiences. The goal is to provide an easy-to-navigate platform with categories such as soft skills, education, past experiences, and more, all presented dynamically like a streaming platform, but with resumes instead of movies.
 
 ---
 
 ## 🚀 Features
 
-- **Perfis de Programadores**: Visualize e explore as habilidades, experiências e certificações de desenvolvedores.
-- **Categorias Interativas**: Perfis apresentados por categorias como Soft Skills, Educação, Experiência Profissional e muito mais.
-- **Login para Recrutadores**: Recrutadores têm acesso restrito a um único perfil por vez, facilitando a pesquisa e a visualização de candidatos.
-- **Backoffice para Administradores**: Gerencie múltiplos perfis, ative ou desative acessos, e personalize as informações visíveis.
-- **Futuro Aplicativo Móvel**: A plataforma será expandida para dispositivos móveis, com a mesma interatividade e funcionalidades.
+- **Developer Profiles**: View and explore the skills, experiences, and certifications of developers.
+- **Interactive Categories**: Profiles are presented by categories such as Soft Skills, Education, Professional Experience, and more.
+- **Recruiter Login**: Recruiters have access to only one profile at a time, making it easier to search and view candidates.
+- **Backoffice for Admins**: Manage multiple profiles, activate or deactivate access, and customize visible information.
+- **Future Mobile App**: The platform will be expanded to mobile devices with the same interactivity and features.
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## 💻 Technologies Used
 
 - **Backend**: Java (Spring Boot)
-- **Frontend**: React.js
-- **Banco de Dados**: PostgreSQL (ou o sistema de sua escolha)
-- **Autenticação**: JWT (JSON Web Tokens) para login seguro
-- **CI/CD**: Jenkins (com integração de SonarQube para análise de código)
-- **Versão do Banco de Dados**: Liquibase ou Flyway para migrações
-- **Hospedagem**: (Exemplo: Heroku, AWS, etc.)
-- **Deploy Automático**: GitHub Actions ou Jenkins
+- **Frontend**: Next.js
+- **Database**: PostgreSQL
+- **Authentication**: JWT (JSON Web Tokens) for secure login
+- **CI/CD**: Jenkins (with SonarQube integration for code analysis)
+- **Database Versioning**: Liquibase or Flyway for migrations
+- **Hosting**: (Example: Heroku, AWS, etc.)
+- **Automated Deploy**: GitHub Actions or Jenkins
 
 ---
 
-## 🛠️ Setup e Instalação
+## 🛠️ Setup and Installation
 
-### **Clone este repositório:**
+### **Clone this repository:**
 ```bash
 git clone https://github.com/Ferraz5/SkillSphere.git
