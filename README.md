@@ -1,34 +1,192 @@
-# SkillSphere
+# 🌐 SkillSphere
 
-**SkillSphere** is an interactive web application for showcasing developer profiles, where recruiters can access and explore candidates' skills and experiences. The goal is to provide an easy-to-navigate platform with categories such as soft skills, education, past experiences, and more, all presented dynamically like a streaming platform, but with resumes instead of movies.
+**SkillSphere** is an interactive web application designed to showcase developer profiles dynamically, allowing recruiters to explore candidates' skills and experiences in a streaming-like interface.  
 
----
+The platform offers an **engaging and structured way** to present resumes, featuring sections such as **Soft Skills, Education, Work Experience, Certifications**, and more.  
 
-## 🚀 Features
-
-- **Developer Profiles**: View and explore the skills, experiences, and certifications of developers.
-- **Interactive Categories**: Profiles are presented by categories such as Soft Skills, Education, Professional Experience, and more.
-- **Recruiter Login**: Recruiters have access to only one profile at a time, making it easier to search and view candidates.
-- **Backoffice for Admins**: Manage multiple profiles, activate or deactivate access, and customize visible information.
-- **Future Mobile App**: The platform will be expanded to mobile devices with the same interactivity and features.
+🚀 **Mission:** To simplify talent discovery for recruiters by providing a visually appealing and efficient platform to connect with developers.  
 
 ---
 
-## 💻 Technologies Used
+## 🔥 Features
 
-- **Backend**: Java (Spring Boot)
-- **Frontend**: Next.js
-- **Database**: PostgreSQL
-- **Authentication**: JWT (JSON Web Tokens) for secure login
-- **CI/CD**: Jenkins (with SonarQube integration for code analysis)
-- **Database Versioning**: Liquibase or Flyway for migrations
-- **Hosting**: (Example: Heroku, AWS, etc.)
-- **Automated Deploy**: GitHub Actions or Jenkins
+✅ **Developer Profiles** – View detailed developer portfolios, including technical skills, projects, and certifications.  
+✅ **Interactive Categories** – Navigate profiles through intuitive categories like Soft Skills, Education, and Experience.  
+✅ **Recruiter-Only Access** – Recruiters can log in and explore profiles, but only view one at a time.  
+✅ **Admin Backoffice** – Manage accounts, activate/deactivate users, and control visible information.  
+✅ **Advanced Search & Filtering** – Easily find candidates based on skills, experience, or education.  
+✅ **Responsive Design** – Fully optimized for desktops, tablets, and mobile devices.  
+✅ **Future Mobile App** – Plans to expand to mobile with seamless interactivity and the same features.  
 
 ---
 
-## 🛠️ Setup and Installation
+## 💻 Tech Stack
 
-### **Clone this repository:**
+| **Technology**  | **Usage** |
+|----------------|-----------|
+| **Backend** | Java (Spring Boot) |
+| **Frontend** | Next.js (React Framework) |
+| **Database** | PostgreSQL |
+| **Authentication** | JWT (JSON Web Tokens) |
+| **CI/CD** | Jenkins + SonarQube |
+| **Database Versioning** | Liquibase / Flyway |
+| **Hosting** | Heroku / AWS / Render |
+| **Automated Deploy** | GitHub Actions / Jenkins |
+
+---
+
+## 📂 Project Structure
+
+SkillSphere/
+
+│── backend/ # Java (Spring Boot) API
+
+│ ├── src/main/java # Main application logic
+
+│ ├── src/main/resources # Config files (Liquibase, properties)
+
+│── frontend/ # Next.js frontend
+
+│ ├── components/ # Reusable React components
+
+│ ├── pages/ # Application pages (Routes)
+
+│ ├── services/ # API Calls
+
+│── docker/ # Docker setup
+
+│── .github/ # GitHub Actions for CI/CD
+
+│── docs/ # Documentation files
+
+│── README.md # Project README
+
+│── .gitignore # Git ignore rules
+
+│── package.json # Frontend dependencies
+
+│── pom.xml # Backend dependencies
+
+---
+
+## ⚙️ Setup and Installation
+
+### 1️⃣ Clone this repository
 ```bash
 git clone https://github.com/Ferraz5/SkillSphere.git
+```
+
+### 2️⃣ Backend Setup
+
+Navigate to the backend directory:
+```console
+cd backend
+```
+
+Install dependencies:
+```properties
+mvn clean install
+```
+
+Run the application:
+```properties
+mvn spring-boot:run
+```
+
+
+### 3️⃣ Frontend Setup
+
+Navigate to the frontend directory:
+```console
+cd frontend
+```
+
+Install dependencies:
+```properties
+npm install
+```
+
+Run the Next.js development server:
+
+```properties
+npm run dev
+```
+
+### 4️⃣ Running with Docker (Optional)
+
+To run the project using Docker:
+```properties
+docker-compose up --build
+```
+
+---
+
+## 🚀 Deployment Strategy
+
+- **Continuous Integration (CI):** Automated testing with GitHub Actions and SonarQube for code quality analysis.
+- **Continuous Deployment (CD):** Deploys to Heroku / AWS using Jenkins pipelines.
+- **Database Migrations:** Managed via Liquibase or Flyway for structured schema evolution.
+
+---
+## 📜 API Documentation
+The API follows **RESTful principles**, with authentication via **JWT**.
+Full API documentation available using **Swagger**.
+
+**🔗 Swagger URL:** ```http://localhost:8080/swagger-ui.html```
+
+### Example API Requests:
+🔹 Get all profiles:
+```bat
+GET /api/profiles
+```
+
+🔹 Get a profile by ID:
+```bat
+GET /api/profiles/{id}
+```
+
+🔹 Recruiter login:
+```bat
+POST /api/auth/login
+Content-Type: application/json
+{
+    "email": "recruiter@example.com",
+    "password": "yourpassword"
+}
+```
+
+---
+
+## 👥 Contributing
+
+We welcome contributions! To get started:
+
+1. **Fork the repository**
+2. **Create a new branch** (```feature/new-feature```)
+3. **Commit changes** (```git commit -m "Added new feature"```)
+4. **Push to the branch** (```git push origin feature/new-feature```)
+5. **Create a Pull Request**
+
+---
+
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](https://github.com/Ferraz5/SkillSphere?tab=MIT-1-ov-file) file for details.
+
+---
+
+## 📬 Contact & Support
+
+Have questions or suggestions? Reach out to us!
+
+👤 **Author:** Tiago Ferraz
+
+📧 **Email:** tiagoairesmferraz@gmail.com
+
+👥 **Collaborators:** 
+- Ricardo Pereira
+- Duarte Barbosa
+- Tiago Rosado
+
+## 🚀 SkillSphere – Connecting Talents and Opportunities! 💼
