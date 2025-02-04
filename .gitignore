@@ -496,4 +496,17 @@ gradle-app.setting
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-# End of https://www.toptal.com/developers/gitignore/api/nextjs,java,intellij,reactnative,netbeans,eclipse
+### SonarQube ###
+# SonarQube ignore files.
+#
+# https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
+# Sonar Scanner working directories
+.sonar/
+.sonarqube/
+.scannerwork/
+
+# http://www.sonarlint.org/commandline/
+# SonarLint working directories, configuration files (including credentials)
+.sonarlint/
+
+# End of https://www.toptal.com/developers/gitignore/api/nextjs,java,intellij,reactnative,netbeans,eclipse,sonarqube
