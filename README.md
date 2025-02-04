@@ -37,35 +37,40 @@ The platform offers an **engaging and structured way** to present resumes, featu
 
 ## 📂 Project Structure
 
-SkillSphere/
-
-│── backend/ # Java (Spring Boot) API
-
-│ ├── src/main/java # Main application logic
-
-│ ├── src/main/resources # Config files (Liquibase, properties)
-
-│── frontend/ # Next.js frontend
-
-│ ├── components/ # Reusable React components
-
-│ ├── pages/ # Application pages (Routes)
-
-│ ├── services/ # API Calls
-
-│── docker/ # Docker setup
-
-│── .github/ # GitHub Actions for CI/CD
-
-│── docs/ # Documentation files
-
-│── README.md # Project README
-
-│── .gitignore # Git ignore rules
-
-│── package.json # Frontend dependencies
-
-│── pom.xml # Backend dependencies
+```
+SkillSphere
+│── backend
+│   │── src
+│   │   │── main
+│   │   │   │── java/com/skillsphere
+│   │   │   │── resources
+│   │   │   │   │── application.yml
+│   │   │   │   │── data.sql
+│   │   │   │   │── schema.sql
+│   │   │   │── SkillSphereApplication.java
+│   │   │── test
+│   │   │   │── java/com/skillsphere
+│   │   │   │   │── SkillSphereApplicationTests.java
+│   │── pom.xml
+│   │── Dockerfile
+│   │── README.md
+│
+│── frontend
+│   │── src
+│   │   │── components
+│   │   │── pages
+│   │   │── styles
+│   │   │── public
+│   │   │── utils
+│   │   │── _app.js
+│   │── package.json
+│   │── next.config.js
+│   │── Dockerfile
+│
+│── docker-compose.yml
+│── .gitignore
+│── README.md
+```
 
 ---
 
