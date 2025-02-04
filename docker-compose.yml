@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  frontend:
+    networks:
+      - app-network
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "7004:3000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend
+
+  backend:
+    networks:
+      - app-network
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "7003:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:16-alpine
+    container_name: SkillSphere-db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: SkillSphereStaff
+      POSTGRES_PASSWORD: SkillSphere2025admin!
+      POSTGRES_DB: SkillSphere
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U SkillSphereStaff -d SkillSphere"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - app-network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  sonarqube:
+    image: sonarqube:community
+    container_name: sonarqube
+    restart: always
+    ports:
+      - "9000:9000"
+    environment:
+      SONAR_JDBC_URL: jdbc:postgresql://db:5432/SkillSphere
+      SONAR_JDBC_USERNAME: SkillSphereStaff
+      SONAR_JDBC_PASSWORD: SkillSphere2025admin!
+    networks:
+      - app-network
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+    depends_on:
+      - db
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    restart: always
+    ports:
+      - "8081:8080"
+      - "50000:50000"
+    networks:
+      - app-network
+    volumes:
+      - jenkins_data:/var/jenkins_home
+    environment:
+      JAVA_OPTS: "-Djenkins.install.runSetupWizard=false"
+
+volumes:
+  postgres_data:
+  sonarqube_data:
+  sonarqube_extensions:
+  jenkins_data:
+
+networks:
+  app-network:
