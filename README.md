@@ -29,7 +29,7 @@ The platform offers an **engaging and structured way** to present resumes, featu
 | **Database** | PostgreSQL |
 | **Authentication** | JWT (JSON Web Tokens) |
 | **CI/CD** | Jenkins + SonarQube |
-| **Database Versioning** | Liquibase / Flyway |
+| **Database Versioning** | Liquibase |
 | **Hosting** | Heroku / AWS / Render |
 | **Automated Deploy** | GitHub Actions / Jenkins |
 
