@@ -180,13 +180,12 @@ This project is licensed under the MIT License – see the [LICENSE](https://git
 
 Have questions or suggestions? Reach out to us!
 
-👤 **Author:** Tiago Ferraz
-
-📧 **Email:** tiagoairesmferraz@gmail.com
-
-👥 **Collaborators:** 
+👤 **Authors:** 
+- Tiago Ferraz
 - Ricardo Pereira
 - Duarte Barbosa
 - Tiago Rosado
+
+📧 **Email:** tiagoairesmferraz@gmail.com
 
 ## 🚀 SkillSphere – Connecting Talents and Opportunities! 💼
