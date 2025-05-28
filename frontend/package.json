@@ -11,12 +11,13 @@
   "dependencies": {
     "@tanstack/react-query": "^5.66.0",
     "axios": "^1.7.9",
+    "framer-motion": "^12.10.4",
     "lucide-react": "^0.474.0",
     "next": "15.1.6",
     "next-i18next": "^15.4.1",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-datepicker": "^8.2.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.1.0",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
