@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+User -> System: Ask the system to show the Login Page
+activate System
+System --> User: Shows the Login Page
+deactivate System
+
+User -> System: Fill the email and password and send
+activate System
+System --> User: Login Successfully done and show Select Profile
+deactivate System
+@enduml

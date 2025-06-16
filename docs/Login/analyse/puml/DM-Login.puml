@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+hide circle
+hide methods
+
+class User{
+    Full Name
+    PhoneNumber
+    Gender
+    email
+    encryptedPassword
+}
+
+@enduml
