@@ -1,5 +1,13 @@
 # 🌐 SkillSphere
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/Ferraz5/SkillSphere/ci.yml?branch=main)](https://github.com/Ferraz5/SkillSphere/actions)
+[![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://www.java.com/)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.7-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Next.js](https://img.shields.io/badge/Next.js-13-black.svg)](https://nextjs.org/)
+[![Docker](https://img.shields.io/badge/Docker-Container-blue.svg)](https://www.docker.com/)
+
+
 **SkillSphere** is an interactive web application designed to showcase developer profiles dynamically, allowing recruiters to explore candidates' skills and experiences in a streaming-like interface.  
 
 The platform offers an **engaging and structured way** to present resumes, featuring sections such as **Soft Skills, Education, Work Experience, Certifications**, and more.  
