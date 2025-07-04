@@ -31,8 +31,8 @@ export default function Register() {
 
         setError("");
         // Proceed with registration logic
-        console.log("Registered:", { email, firstName, lastName, password });
-        window.location.href = " /login/Login"; // Redirect to login
+        console.log("Registered:", { email, firstName, lastName });
+        window.location.href = "/login/Login"; // Redirect to login
     };
 
     return (
