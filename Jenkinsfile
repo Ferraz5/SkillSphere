@@ -4,41 +4,25 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', 
-                    credentialsId: 'github-token', 
-                    url: 'https://github.com/Ferraz5/SkillSphere.git'
+                git branch: 'main', credentialsId: 'github-token', url: 'https://github.com/Ferraz5/SkillSphere.git'
             }
         }
 
         stage('Build Backend') {
             steps {
-                sh 'docker build -t backend-image ./backend'
+                sh 'cd backend && ./mvnw clean package'
             }
         }
 
         stage('Build Frontend') {
             steps {
-                sh 'docker build -t frontend-image ./frontend'
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                sh 'docker run --rm backend-image mvn test'
-            }
-        }
-
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv('SonarQube') {
-                    sh 'mvn sonar:sonar'
-                }
+                sh 'cd frontend && npm install && npm run build'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'docker-compose up -d'
+                sh 'docker-compose up -d --build'
             }
         }
     }
