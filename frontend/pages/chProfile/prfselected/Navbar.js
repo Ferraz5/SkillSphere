@@ -23,9 +23,9 @@ export default function Navbar() {
 
           {/* Links principais */}
           <nav className="hidden md:flex space-x-6 text-sm text-white">
-            <a href="#" className="hover:text-gray-300">Home</a>
-            <a href="#" className="hover:text-gray-300">About</a>
-            <a href="#" className="hover:text-gray-300">Discover</a>
+            <a className="hover:text-gray-300">Home</a>
+            <a  className="hover:text-gray-300">About</a>
+            <a className="hover:text-gray-300">Discover</a>
           </nav>
         </div>
 

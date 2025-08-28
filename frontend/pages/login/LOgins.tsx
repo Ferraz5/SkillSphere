@@ -11,11 +11,9 @@ export default function LOgin() {
   transition={{ duration: 0.4 }}
   className="relative bg-[#1c1c1c] p-8 rounded-2xl shadow-xl w-80"
 >
-      <div className="relative bg-[#1c1c1c] p-8 rounded-2xl shadow-xl w-80">
+      <div >
         <div className="flex justify-center items-center mb-6 text-white gap-2">
-          <span className="text-pink-500 text-xl">🔊</span>
           <h2 className="text-lg font-bold tracking-widest">LOGIN</h2>
-          <span className="text-pink-500 text-xl">❤️</span>
         </div>
 
         <input

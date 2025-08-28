@@ -16,8 +16,6 @@ const geistMono = Geist_Mono({
 });
 export default function ChProfile() {
 
-
-    const router = useRouter();
       
     
       
